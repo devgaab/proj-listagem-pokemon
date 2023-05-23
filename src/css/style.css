@@ -1,0 +1,299 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(../imagens/fundo-dia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #5e5b5bad;
+    color: #212121;
+}
+
+body.modo-escuro {
+    background-image: url(../imagens/fundo-noite.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-image: url(../imagens/poke-card-dark-theme.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.modo-escuro .cartao-pokemon:hover {
+    background-image: url(../imagens/poke-card-dark-theme2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.modo-escuro .descricao {
+    background-color: #93929f;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo {
+    width: 250px;
+    transition: 0.2s ease-in-out;
+}
+
+header .pokeball {
+    width: 60px;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+header .imagem-botao {
+    width: 80px;
+    margin-right: 7px;
+    transition: 0.2s ease-in-out;
+}
+
+.imagem-botao {
+    position: relative;
+    animation-name: flutuar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar input {
+    border: 3px solid;
+    background-color: #212121a5;
+    border-radius: 15px;
+    border-color: #212121;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+    width: 65%;
+}
+
+.center {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+body .gif:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-image: url(../imagens/poke-card-light-theme.png);
+    background-size: cover;
+    background-position: center;
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 6px 6px 5px #00000093
+}
+
+main .cartao-pokemon:hover {
+    background-image: url('../imagens/poke-card-light-theme2.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #212121;
+    background-color: #f5f5f549;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000000b4;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.modo-escuro main .cartao-pokemon .informacoes {
+    border-color: #ffffff;
+}
+
+main .cartao-pokemon .gif {
+    width: 80px;
+    height: 80px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #00000083;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.voador {
+    background-color: #95b7ff;
+}
+
+.normal {
+    background-color: rgb(190, 190, 190);
+}
+
+.voador {
+    background-color: rgb(135, 206, 250);
+}
+
+.eletrico {
+    background-color: rgb(255, 255, 0);
+}
+
+.lutador {
+    background-color: rgba(227, 25, 11, 0.863);
+}
+
+.pedra {
+    background-color: rgb(131, 129, 128);
+}
+
+.gelo {
+    background-color: rgb(0, 255, 255);
+}
+
+.psiquico {
+    background-color: rgb(255, 105, 180);
+}
+
+.fada {
+    background-color: rgb(246, 173, 210);
+}
+
+.aco {
+    background-color: rgb(105, 105, 105);
+}
+
+.fantasma {
+    background-color: rgb(128, 0, 128);
+}
+
+.dragao {
+    background-color: rgb(0, 0, 139);
+}
+
+.terra {
+    background-color: rgb(109, 63, 18);
+}
+
+main .descricao {
+    background-color: #ded6d2;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: justify;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+    margin: -4px;
+}
+
+.to-top {
+    width: 55px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    animation-name: flutuar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

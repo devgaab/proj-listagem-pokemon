@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pokédex Dev em Dobro | By Gaab</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" type="imagem.png" href="./src/imagens/pokeball.png">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="https://github.com/gabyzinha72" target="_blank">
+            <img src="./src/imagens/pixel-pokeball.gif" alt="pokeball" class="pokeball">
+        </a>
+
+        <a href="#">
+            <img src="./src/imagens/pokemon-logo.png" alt="pokemon" class="logo">
+        </a>
+
+        <button id="botao-alterar-tema">
+            <img src="./src/imagens/solrock.png" alt="light theme" class="imagem-botao">
+        </button>
+
+    </header>
+    <main>
+        <div class="search-bar center">
+            <input type="search" name="search" placeholder="Pesquisar nome..">
+        </div>
+        <div class="content"></div>
+
+        <ul class="listagem-pokemon">
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Bulbasaur</span>
+                    <span>#001</span>
+                </div>
+
+                <button id="button-switch-sprite-1" class="botao">
+                    <img src="./src/imagens/1.gif" alt="Bulbasaur" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Há uma semente de planta em suas costas desde o dia que este Pókemon nasce. A
+                    semente cresce lentamente.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Ivysaur</span>
+                    <span>#002</span>
+                </div>
+
+                <button id="button-switch-sprite-2">
+                    <img src="./src/imagens/2.gif" alt="Ivysaur" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Quando o bulbo em suas costas cresce, parece perder a capacidade de ficar de pé
+                    em
+                    suas patas traseiras.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Venusaur</span>
+                    <span>#003</span>
+                </div>
+
+                <button id="button-switch-sprite-3">
+                    <img src="./src/imagens/3.gif" alt="Venusaur" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Sua planta floresce quando está absorvendo energia solar. Ele permanece em
+                    movimento para buscar a luz solar.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmander</span>
+                    <span>#004</span>
+                </div>
+
+                <button id="button-switch-sprite-4">
+                    <img src="./src/imagens/4.gif" alt="Charmander" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                </ul>
+
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da
+                    ponta
+                    de sua cauda.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmeleon</span>
+                    <span>#005</span>
+                </div>
+
+                <button id="button-switch-sprite-5">
+                    <img src="./src/imagens/5.gif" alt="Charmeleon" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                </ul>
+
+                <p class="descricao">Tem uma natureza bárbara. Na batalha, ele chicoteia sua cauda ardente e corta
+                    com
+                    garras afiadas.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charizard</span>
+                    <span>#006</span>
+                </div>
+
+                <button id="button-switch-sprite-6">
+                    <img src="./src/imagens/6.gif" alt="Charizard" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo fogo">Fogo</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Ele cospe fogo que é quente o suficiente para derreter pedregulhos. Pode causar
+                    incêndios florestais soprando chamas.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Squirtle</span>
+                    <span>#007</span>
+                </div>
+
+                <button id="button-switch-sprite-7">
+                    <img src="./src/imagens/7.gif" alt="Squirtle" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+
+                <p class="descricao">Quando ele retrai seu longo pescoço em sua concha, ele esguicha água com força
+                    vigorosa.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Wartortle</span>
+                    <span>#008</span>
+                </div>
+
+                <button id="button-switch-sprite-8">
+                    <img src="./src/imagens/8.gif" alt="Wartortle" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+
+                <p class="descricao">É reconhecido como um símbolo de longevidade. Se sua concha tem algas, esse
+                    Wartortle é muito antigo.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Blastoise</span>
+                    <span>#009</span>
+                </div>
+
+                <button id="button-switch-sprite-9">
+                    <img src="./src/imagens/9.gif" alt="Blastoise" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo agua">Água</li>
+                </ul>
+
+                <p class="descricao">Ele esmaga seu inimigo sob seu corpo pesado para causar desmaios. Em uma
+                    pitada,
+                    ele se retirará dentro de sua concha.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Caterpie</span>
+                    <span>#010</span>
+                </div>
+
+                <button id="button-switch-sprite-10">
+                    <img src="./src/imagens/10.gif" alt="Caterpie" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                </ul>
+
+                <p class="descricao">Para proteção, ele libera um fedor horrível da antena em sua cabeça para
+                    afastar os
+                    inimigos.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Metapod</span>
+                    <span>#011</span>
+                </div>
+
+                <button id="button-switch-sprite-11">
+                    <img src="./src/imagens/11.gif" alt="Metapod" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                </ul>
+
+                <p class="descricao">O escudo que cobre o corpo deste Pokémon é tão duro como uma laje de ferro.
+                    Metapod
+                    não se move muito. Ele ainda permanece assim porque está preparando suas entranhas macias para a
+                    evolução dentro da casca dura.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Butterfree</span>
+                    <span>#012</span>
+                </div>
+
+                <button id="button-switch-sprite-12">
+                    <img src="./src/imagens/12.gif" alt="Butterfree" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Butterfree tem uma capacidade superior para procurar um delicioso mel de
+                    flores.
+                    Ele pode até mesmo buscar, extrair, transportar e mel de flores que estão florescendo mais de
+                    seis
+                    milhas do seu ninho.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Weedle</span>
+                    <span>#013</span>
+                </div>
+
+                <button id="button-switch-sprite-13">
+                    <img src="./src/imagens/13.gif" alt="Weedle" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Weedle tem um sentido extremamente agudo de cheiro. Ele é capaz de distinguir
+                    os
+                    seus tipos favoritos de folhas daqueles que não gosta apenas por cheirar com a sua grande tromba
+                    vermelha (nariz).</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Kakuna</span>
+                    <span>#014</span>
+                </div>
+
+                <button id="button-switch-sprite-14">
+                    <img src="./src/imagens/14.gif" alt="Kakuna" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Kakuna permanece praticamente imóvel quando ele se agarra a uma árvore. No
+                    entanto,
+                    no interior, é extremamente ocupado, que se prepara para a sua evolução que vem. Isto é evidente
+                    o
+                    quão quente a casca torna-se ao toque.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Beedrill</span>
+                    <span>#015</span>
+                </div>
+
+                <button id="button-switch-sprite-15">
+                    <img src="./src/imagens/15.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo inseto">Inseto</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Beedrill é extremamente territorial. Ninguém deve se aproximar de seu ninho -
+                    isto
+                    é para sua própria segurança. Se ele se irritou, eles vão atacar em um enxame furioso.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Pidgey</span>
+                    <span>#016</span>
+                </div>
+
+                <button id="button-switch-sprite-16">
+                    <img src="./src/imagens/16.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Pidgey tem um olfato extremamente aguçado. É capaz de identificar comida a
+                    quilômetros de distância. Sempre retorna para seu ninho após buscar comida.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Pidgeotto</span>
+                    <span>#017</span>
+                </div>
+
+                <button id="button-switch-sprite-17">
+                    <img src="./src/imagens/17.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Pidgeotto voa para patrulhar seu território. Ele caça pequenos Pokémon para
+                    alimentar sua prole faminta no ninho.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Pidgeot</span>
+                    <span>#018</span>
+                </div>
+
+                <button id="button-switch-sprite-18">
+                    <img src="./src/imagens/18.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Pidgeot tem visão aguçada que lhe permite localizar presas a grandes distâncias.
+                    Ele voa em alta velocidade para capturar sua presa.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Rattata</span>
+                    <span>#019</span>
+                </div>
+
+                <button id="button-switch-sprite-19">
+                    <img src="./src/imagens/19.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                </ul>
+
+                <p class="descricao">Rattata é cauteloso ao extremo. Mesmo enquanto dorme, ele mantém uma orelha atenta
+                    aos sons ao seu redor. Na menor sensação de perigo, ele acorda imediatamente.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Raticate</span>
+                    <span>#020</span>
+                </div>
+
+                <button id="button-switch-sprite-20">
+                    <img src="./src/imagens/20.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                </ul>
+
+                <p class="descricao">Raticate é um roedor feroz. Ele sempre está procurando por comida, então pode ser
+                    encontrado em áreas onde a comida é abundante.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Spearow</span>
+                    <span>#021</span>
+                </div>
+
+                <button id="button-switch-sprite-21">
+                    <img src="./src/imagens/21.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Spearow tem um bico curvo e afiado. Ele voa em círculos em busca de presas, como
+                    pequenos insetos. Quando encontra uma presa, mergulha rapidamente para capturá-la.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Fearow</span>
+                    <span>#022</span>
+                </div>
+
+                <button id="button-switch-sprite-22">
+                    <img src="./src/imagens/22.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo normal">Normal</li>
+                    <li class="tipo voador">Voador</li>
+                </ul>
+
+                <p class="descricao">Fearow é conhecido por sua velocidade e agilidade nos céus. Ele pode voar em alta
+                    velocidade, mergulhando em direção ao solo para atacar suas presas.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Ekans</span>
+                    <span>#023</span>
+                </div>
+
+                <button id="button-switch-sprite-23">
+                    <img src="./src/imagens/23.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Ekans tem uma mandíbula flexível que pode se deslocar para trás, permitindo que
+                    engula presas maiores do que sua cabeça. É noturno e se move silenciosamente pelas áreas em busca de
+                    comida.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Arbok</span>
+                    <span>#024</span>
+                </div>
+
+                <button id="button-switch-sprite-24">
+                    <img src="./src/imagens/24.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+
+                <p class="descricao">Arbok é conhecido por sua mordida venenosa e pela marca em forma de "X" nas costas.
+                    Quando se sente ameaçado, ele pode inflar seu corpo e fazer sons assustadores para afastar os
+                    intrusos.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Pikachu</span>
+                    <span>#025</span>
+                </div>
+
+                <button id="button-switch-sprite-25">
+                    <img src="./src/imagens/25.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo eletrico">Elétrico</li>
+                </ul>
+
+                <p class="descricao">Pikachu é um Pokémon elétrico popularmente conhecido por sua fofura e por sua cauda
+                    em forma de raio. Ele pode armazenar eletricidade em suas bochechas e liberá-la em ataques elétricos
+                    poderosos.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Raichu</span>
+                    <span>#026</span>
+                </div>
+
+                <button id="button-switch-sprite-26">
+                    <img src="./src/imagens/26.gif" alt="Beedrill" class="gif">
+                </button>
+
+                <ul class="tipos">
+                    <li class="tipo eletrico">Elétrico</li>
+                </ul>
+
+                <p class="descricao">Raichu é a forma evoluída do Pikachu. Ele tem a capacidade de armazenar
+                    eletricidade em seu corpo e usar sua cauda em forma de raio para liberar ataques elétricos
+                    poderosos.</p>
+            </li>
+        </ul>
+    </main>
+
+    <button onclick="toTopFunction()" id="toTop" title="Topo" style="display: block;">
+        <img src="./src/imagens/up.png" alt="Topo" class="to-top">
+    </button>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
