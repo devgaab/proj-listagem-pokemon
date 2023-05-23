@@ -3,7 +3,7 @@
 </p>
 
 ## 🖥️ Projeto
-Esse é um projeto de listagem de Pokémon em cards utilizando HTML, CSS e JavaScript.
+Esse é um projeto de listagem de Pokémon em cards utilizando HTML, CSS e JavaScript. O projeto foi desenvolvido durante o evento do Dev em Dobro.
 
 ## ⚙ Funcionalidades
 - Tema escuro: O usuário pode alternar entre o tema claro e escuro;
