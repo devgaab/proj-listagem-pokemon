@@ -1,3 +1,4 @@
+//Função de alterar tema
 const body = document.querySelector("body");
 const botaoAlterarTema = document.getElementById("botao-alterar-tema");
 const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao");
@@ -15,7 +16,7 @@ botaoAlterarTema.addEventListener("click", () => {
     }
 });
 
-
+//Função de barra de pesquisa
 const searchBar = document.querySelector('.search-bar input');
 const cards = document.querySelectorAll('.listagem-pokemon .cartao-pokemon');
 
@@ -33,7 +34,7 @@ searchBar.addEventListener('input', function () {
     });
 });
 
-
+//Função de shiny nos pokemons
 const pokemonImg = document.querySelectorAll(".gif");
 
 
@@ -86,7 +87,7 @@ for (let i = 1; i <= 26; i++) {
     }
 }
 
-
+// Função de voltar ao topo
 window.onscroll = function () {
     scrollFunction();
 };
